@@ -1,6 +1,7 @@
 # MP_FairFace: Assignment to join Professor Joo's Research
 
 Original paper: https://arxiv.org/abs/1908.04913
+
 Original GitHub Repo: https://github.com/dchen236/FairFace 
 
 Goal: To try to replicate the results from the paper 'FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age', as well as learn more about Professor Joo's research.
