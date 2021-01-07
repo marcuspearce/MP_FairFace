@@ -1,12 +1,12 @@
 # MP_FairFace
 
-Assignment to join Professor Joo's Research
+**Goal:** To try to replicate the results from the paper 'FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age', as well as learn more about Professor Joo's research.
 
 Original paper: https://arxiv.org/abs/1908.04913
 
 Original GitHub Repo: https://github.com/dchen236/FairFace 
 
-Goal: To try to replicate the results from the paper 'FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age', as well as learn more about Professor Joo's research.
+Note: The datasets, as well as pretrained models, are not included in this repo, but can be found in the Original GitHub Repo above. They are not included as they are either exceed GitHub's max file size or it took too long to upload
 
 ### Progress
 
@@ -23,14 +23,14 @@ Goal: To try to replicate the results from the paper 'FairFace: Face Attribute D
 ### Issues
 
 - Training the model would take days/weeks to complete at the current rate - Am I doing something wrong?
-	- Tried running code both locally with Jupyter Notebook and with Google colab - wondering if the issue with my hardware or approach?
+	- Tried running code both locally with Jupyter Notebook and with Google colab - wondering if the issue is with my hardware or approach?
 		- Approach: Using the data given in the original GitHub repo, same model architecture as specified in the paper
 			- Model Architecture:
 				- torchvision.models ResNet-34(pretrained=False)
 				- Criterion torch.nn.CrossEntropyLoss
 				- Optimizer torch.optim.Adam
 	- Misc issues with Google Colab
-		- In Google Colab, ran into issue: "OSError: [Errno 5] Input/output error," which is a known issue when files are too large
+		- In Google Colab, ran into issue: "OSError: [Errno 5] Input/output error," which is a known issue when directories are too large
 		- In Google Colab, train dataset would be corrupted (missing files) when uploaded to drive
 			- Wrote script to catch corruptions to fix this
 	- Currently I have no access to GPU or CUDA
@@ -53,6 +53,5 @@ Goal: To try to replicate the results from the paper 'FairFace: Face Attribute D
 
 - MP_FairFace_Model_Training.ipynb = Model Training code
 - Check_Train_Folder_Contents_Script.ipynb = Script to check for data corruptions in Google Drive
-- Note: The datasets, as well as pretrained models are not included in this repo, but can be found in the Original GitHub Repo above. 
-	- They are not included as they are either exceed GitHub's max file size or it took too long to upload
+
 
