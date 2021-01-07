@@ -1,4 +1,6 @@
-# MP_FairFace: Assignment to join Professor Joo's Research
+# MP_FairFace
+
+Assignment to join Professor Joo's Research
 
 Original paper: https://arxiv.org/abs/1908.04913
 
